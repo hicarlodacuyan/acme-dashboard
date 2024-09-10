@@ -1,0 +1,15 @@
+.invoices-container {
+  padding: 1em;
+}
+
+h1 {
+  font-family: "lusitana", serif;
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  .invoices-container {
+    width: 100%;
+    padding: 0;
+  }
+}

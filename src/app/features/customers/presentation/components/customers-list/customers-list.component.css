@@ -1,0 +1,107 @@
+.mobile-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background: #f9fafb;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.customers-table {
+  display: none;
+}
+
+.customer-card {
+  background: #ffffff;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.customer-card-header,
+.customer-card-body {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.customer-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-bottom: 1em;
+}
+
+.customer-card-header-details {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.customer-name {
+  padding: 0;
+  margin: 0;
+}
+
+.customer-email {
+  color: gray;
+}
+
+img {
+  width: 28px;
+  border-radius: 50%;
+}
+
+.customer-card-body {
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.pending,
+.paid {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 12px;
+}
+
+.customer-card-footer {
+  padding-top: 1em;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.paginator {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .mobile-view {
+    display: none;
+  }
+
+  .customers-table {
+    display: table;
+  }
+
+  .picture-name-cell {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+  }
+
+  th,
+  td {
+    padding: 2em;
+  }
+
+  .paginator {
+    margin-top: 20px;
+  }
+}

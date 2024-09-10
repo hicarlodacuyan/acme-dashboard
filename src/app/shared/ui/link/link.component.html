@@ -1,0 +1,13 @@
+<a
+  class="link-button nav-link"
+  [ngClass]="{ active: active }"
+  [routerLink]="link"
+>
+  <mat-icon
+    class="logo-icon"
+    aria-hidden="false"
+    aria-label="logo"
+    [fontIcon]="icon"
+  ></mat-icon>
+  <span [ngClass]="{ 'link-text': iconOnly }">{{ text }}</span>
+</a>
